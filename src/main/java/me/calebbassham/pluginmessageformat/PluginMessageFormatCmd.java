@@ -15,7 +15,7 @@ public class PluginMessageFormatCmd implements CommandExecutor, TabCompleter {
         if (args.length == 1) {
             if (args[0].equalsIgnoreCase("reload") || args[0].equalsIgnoreCase("rl")) {
                 PluginMessageFormat.reloadFromLastConfig();
-                sender.sendMessage(PluginMessageFormat.getPrefix() + "");
+                sender.sendMessage(PluginMessageFormat.getPrefix() + "Reloaded config.");
                 return true;
             }
         }
