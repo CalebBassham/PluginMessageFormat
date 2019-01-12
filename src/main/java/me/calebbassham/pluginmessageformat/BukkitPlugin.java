@@ -8,6 +8,7 @@ public class BukkitPlugin extends JavaPlugin  {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig();
         PluginMessageFormat.loadFromConfig(this.getConfig());
         registerCommand("pluginmessageformat", new PluginMessageFormatCmd());
     }
