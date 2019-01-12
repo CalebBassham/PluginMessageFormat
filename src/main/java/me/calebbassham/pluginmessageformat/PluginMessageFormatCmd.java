@@ -5,6 +5,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 
+import java.util.Collections;
 import java.util.List;
 
 public class PluginMessageFormatCmd implements CommandExecutor, TabCompleter {
@@ -24,7 +25,11 @@ public class PluginMessageFormatCmd implements CommandExecutor, TabCompleter {
     }
 
     @Override
-    public List<String> onTabComplete(CommandSender commandSender, Command command, String s, String[] strings) {
-        return null;
+    public List<String> onTabComplete(CommandSender commandSender, Command command, String s, String[] args) {
+        if (args.length == 1) {
+            return List.of("reload");
+        }
+
+        return Collections.emptyList();
     }
 }
