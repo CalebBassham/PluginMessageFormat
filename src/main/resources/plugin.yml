@@ -1,0 +1,9 @@
+name: PluginMessageFormat
+author: Caleb Bassham
+version: 1.0.0
+main: me.calebbassham.pluginmessageformat.BukkitPlugin
+
+commands:
+  pluginmessageformat:
+    permission: "pluginmessageformat.manage"
+    aliases: [pmf]

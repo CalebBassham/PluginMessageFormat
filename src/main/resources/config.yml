@@ -1,0 +1,11 @@
+prefix: ''
+
+color pallets:
+  main:
+    primaryTextColor: "&7"
+    highlightTextColor: "&b"
+    valueTextColor: "&3"
+    extraTextColor: "&8"
+  error:
+    primaryTextColor: "&c"
+    highlightTextColor: "&4"
